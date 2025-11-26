@@ -41,5 +41,3 @@ s='HF FE ED DG GA AH HB FB BC CG'.split()
 for p in permutations('ABCDEFGH'):
     if all(str(p.index(x)+1) in a[p.index(y)] for x,y in s):
         print(*p)
-
-# вывод:
